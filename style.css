@@ -15,6 +15,7 @@
   img, picture, video, canvas, svg {
     display: block;
     max-width: 100%;
+    max-height: 100%;
   }
   input, button, textarea, select {
     font: inherit;
@@ -26,11 +27,121 @@
     isolation: isolate;
   }
 
+:root {
+  --branding-text-color: #fff;
+  --primary-background-color:  #F0F0F0;
+  --secondary-background-color: #fff;
+  --content-text-color: #333333;
+  --accent-color: #C71585;
+  font-size: 14px;
+}
+
+@font-face {
+  font-family: 'norse-webfont';
+  src: url(Fonts/norse-webfont.woff2),
+       url(Fonts/norse-webfont.woff);
+}
+
+@font-face {
+  font-family: 'norsebold-webfont';
+  src: url(Fonts/norsebold-webfont.woff2),
+       url(Fonts/norsebold-webfont.woff);
+}
+
+@font-face {
+  font-family: 'norse-logo';
+  src: url(Fonts/norse-logo.otf);
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'norse-webfont', sans-serif;
+}
+
 .container {
   display: flex;
+  height: 100vh;
+}
+
+.branding-section {
+  flex: 1;
+  background-image: url(Images/a-s-OeTbb4Op1LI-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  color: var(--branding-text-color);
+  background-color: var(--primary-background-color);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.branding-section a {
+  color: var(--branding-text-color);
+}
+
+.content-section {
+  flex: 2;
 }
 
 .logo-container {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  top:100px;
 }
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.logo__text {
+  font-family: 'norse-logo';
+  font-size: 4rem;
+}
+
+.logo__img {
+  width: 70px;
+  height: auto;
+}
+
+.branding-section > p {
+  margin-bottom: 10px;
+}
+
+.content-section {
+  display: flex;
+  flex-direction: column;
+}
+.hero {
+  background-color: var(--primary-background-color);
+  flex: 1;
+}
+
+.form-container {
+  flex: 1;
+  background-color: var(--secondary-background-color);
+  /* box-shadow: 0 6px 6px -6px rgba(0, 0, 0, 0.5); */
+}
+
+.submit-container {
+  flex: 1;
+  background-color: var(--primary-background-color);
+}
+
+
+
+
+
+
+
+
 
