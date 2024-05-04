@@ -27,25 +27,26 @@
     isolation: isolate;
   }
 
-:root {
-  --branding-text-color: #fff;
-  --primary-background-color:  #F0F0F0;
-  --secondary-background-color: #fff;
-  --content-text-color: #333333;
-  --accent-color: #C71585;
-  font-size: 14px;
-}
-
-@font-face {
-  font-family: 'norse-webfont';
-  src: url(Fonts/norse-webfont.woff2),
-       url(Fonts/norse-webfont.woff);
-}
-
-@font-face {
-  font-family: 'norsebold-webfont';
-  src: url(Fonts/norsebold-webfont.woff2),
-       url(Fonts/norsebold-webfont.woff);
+  
+  :root {
+    --branding-text-color: #fff;
+    --primary-background-color:  #F0F0F0;
+    --secondary-background-color: #fff;
+    --content-text-color: #333333;
+    --accent-color: #C71585;
+    font-size: 14px;
+  }
+  
+  @font-face {
+    font-family: 'norse-webfont';
+    src: url(Fonts/norse-webfont.woff2),
+    url(Fonts/norse-webfont.woff);
+  }
+  
+  @font-face {
+    font-family: 'norsebold-webfont';
+    src: url(Fonts/norsebold-webfont.woff2),
+    url(Fonts/norsebold-webfont.woff);
 }
 
 @font-face {
@@ -164,7 +165,8 @@ h1, h2, h3, h4, h5, h6 {
   margin: 2rem;
   color: var(--branding-text-color);
   background-color: var(--accent-color);
-  padding: 10px 40px 10px 40px;
+  padding: 10px;
+  width: 200px;
   border-radius: 10px;
   font-weight: bolder;
   border-color: var(--primary-background-color);
@@ -175,6 +177,46 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--accent-color);
   text-decoration: none;
 }
+
+input,
+textarea,
+select,
+button {
+  width: 150px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.form-header {
+  margin-bottom: 20px;
+}
+
+.form-row {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+input, label {
+  display: block;
+}
+
+
+
+
+
+
+
+
 
 
 
