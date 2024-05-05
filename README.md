@@ -2,7 +2,7 @@
 
 This project, "Odin Sign Up Form," is a simple web application designed to showcase proficiency in styling and validating HTML forms using HTML, CSS, and JavaScript. It was developed as part of The Odin Project curriculum, serving as a practical exercise in form development and validation.
 
-![Odin Sign Up Form Screenshot](Images/Sign%20in%20form%20screenshot.png)
+![Odin Sign Up Form Screenshot](Images/sign-in-form-screenshot.png)
 
 ## Technologies Used
 
