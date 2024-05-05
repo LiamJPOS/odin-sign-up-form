@@ -33,6 +33,7 @@
     --primary-background-color:  #F0F0F0;
     --secondary-background-color: #fff;
     --content-text-color: #333333;
+    --form-text-color: #33424e;
     --accent-color: #C71585;
     font-size: 14px;
   }
@@ -139,7 +140,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero > * {
-  margin-left: 2rem;
+  margin-left: 40px;
+  max-inline-size: 66ch;
 }
 
 .hero-text-3 {
@@ -157,12 +159,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .submit-container > * {
-  margin-left: 2rem;
+  margin-left: 40px;
   font-weight: bold;
 }
 
 .submit-btn {
-  margin: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   color: var(--branding-text-color);
   background-color: var(--accent-color);
   padding: 10px;
@@ -192,25 +195,49 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin-left: 20px;
+  margin-left: 40px;
   margin-top: 20px;
+  color: var(--form-text-color);
 }
 
 .form-header {
   margin-bottom: 20px;
+  font-size: 1.5rem;
 }
 
 .form-row {
   margin-bottom: 20px;
   display: flex;
-  gap: 20px;
+  gap: 40px;
 }
 
 input, label {
   display: block;
 }
 
+label {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
 
+input {
+  font-size: 1rem;
+  font-weight: normal;
+  width: 250px;
+  padding: 0.2rem;
+  padding-left: 0.5rem;
+}
+
+input:focus {
+  outline: none !important;
+  border: 1px solid blue;
+  box-shadow: 0 0 10px #719ECE;
+}
+
+input[type="password"] {
+  outline: none !important;
+  border: 1px solid red;
+}
 
 
 
